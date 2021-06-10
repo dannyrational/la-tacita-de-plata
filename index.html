@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - La Tacita de Plata</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="public/main.css">
+    <link rel="stylesheet" href="public/custom.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="px-4 py-4 fixed top-0 left-0 z-20 bg-secondary w-[75%] xs:w-[65%] sm:w-[55%] md:w-[45%] h-screen transition duration-300 transform -translate-x-full"
+        id="sidebar">
+        <div class="flex items-center w-full h-full px-4">
+            <div class="flex flex-col space-y-2 text-[26px] font-medium font-bebas tracking-wide">
+                <a class="uppercase hover:text-primary transition-colors duration-300" href="">Inicio</a>
+                <a class="uppercase hover:text-primary transition-colors duration-300" href="">Acerca</a>
+                <a class="uppercase hover:text-primary transition-colors duration-300" href="">Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Layover -->
+    <div class="fixed top-0 left-0 z-10 hidden w-full h-full bg-black bg-opacity-50 cursor-pointer" id="main-layover">
+    </div>
+
+    <!-- Desktop Navbar -->
+    <div class="fixed w-full container-fluid opacity-1" id="navbar">
+        <div class="row border-b">
+            <div class="col-6 h-[80px] border-r flex items-center justify-end">
+                <a class="absolute z-10 top-2 left-8" href=""><img class="w-24 md:w-28" src="media/logo-primary.png"
+                        alt=""></a>
+
+                <div class="hidden md:block text-white space-x-4 mr-4">
+                    <a class="hover:text-primary" href=""><i class="fab fa-facebook text-xl"></i></a>
+                    <a href=""><i class="fab fa-instagram text-xl"></i></a>
+                    <i class="fab fa-tripadvisor text-xl"></i>
+                </div>
+            </div>
+            <div class="col-6 h-[80px] flex items-center justify-end">
+                <a class="hidden md:block font-bebas text-white mr-16 text-2xl font-normal tracking-wider" href="tel:+50223175874"><span>+502.2317.5874</span></a>
+
+                <div class="absolute flex flex-col space-y-1 top-5 right-2 py-2 px-3 cursor-pointer" id="open-btn">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="w-full border-b mt-1"></div>
+            <div class="w-full border-b mt-[1px]"></div>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid bg-purple-600 bg-cover bg-no-repeat bg-center md:bg-bottom"
+        style="background-image: url('media/banner-section-1.png');">
+        <div class="row">
+            <div class="col-12 h-[410px] sm:h-[510px] md:h-[710px] flex items-center justify-center">
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-12 h-[650px] flex items-center justify-center">
+                <h1>Section 2</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="public/script.js"></script>
+</body>
+
+</html>

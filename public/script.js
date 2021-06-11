@@ -17,9 +17,11 @@ mainLayover.addEventListener('click', function() {
 
 window.onscroll = function() {
     if (window.pageYOffset > 65 || document.pageYOffset > 65) {
-        navbar.classList.add('opacity-0', 'transition', 'duration-300')
+        navbar.classList.remove('show-nav')
+        navbar.classList.add('hide-nav')
     } else {
-        navbar.classList.remove('opacity-0')
+        navbar.classList.remove('hide-nav')
+        navbar.classList.add('show-nav')
     }    
 }
 

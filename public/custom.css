@@ -3,3 +3,19 @@
 .font-bebas {
     font-family: 'Bebas Neue', cursive;
 }
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ? Hide Desktop Navbar */
+.hide-nav {
+    opacity: 0;
+    transition: all 300ms;
+    transform: translateY(-100%);
+}
+
+.show-nav {
+    opacity: 1;
+    transition: all 300ms;
+}

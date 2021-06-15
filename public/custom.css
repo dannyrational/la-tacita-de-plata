@@ -20,3 +20,11 @@
     transition: all 300ms;
 }
 
+/* ? Card Transition */
+.card_hide-text {
+    max-height: 0;
+}
+
+.card_show-text {
+    max-height: 140px;
+}

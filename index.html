@@ -2,120 +2,331 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - La Tacita de Plata</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style Sheets -->
-    <link rel="stylesheet" href="public/main.css">
-    <link rel="stylesheet" href="public/custom.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - La Tacita de Plata</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="public/main.css" />
+  <link rel="stylesheet" href="public/custom.css" />
 </head>
 
 <body>
-
-    <!-- ? Sidebar -->
-    <div class="px-4 py-4 fixed top-0 left-0 z-20 bg-secondary w-[75%] xs:w-[65%] sm:w-[55%] md:w-[45%] h-screen transition duration-300 transform -translate-x-full"
-        id="sidebar">
-        <div class="flex items-center w-full h-full px-4">
-            <div class="flex flex-col space-y-2 text-[26px] font-medium font-bebas tracking-wide">
-                <a class="uppercase hover:text-primary transition-colors duration-300" href="">Inicio</a>
-                <a class="uppercase hover:text-primary transition-colors duration-300" href="">Acerca</a>
-                <a class="uppercase hover:text-primary transition-colors duration-300" href="">Menu</a>
-            </div>
-        </div>
+  <!-- ? Sidebar -->
+  <div class="
+        px-4
+        py-4
+        fixed
+        top-0
+        left-0
+        z-20
+        bg-secondary
+        w-[75%]
+        xs:w-[65%]
+        sm:w-[55%]
+        md:w-[45%]
+        h-screen
+        transition
+        duration-300
+        transform
+        -translate-x-full
+      " id="sidebar">
+    <div class="flex items-center w-full h-full px-4">
+      <div class="
+            flex flex-col
+            space-y-2
+            text-[26px]
+            font-medium font-bebas
+            tracking-wide
+          ">
+        <a class="uppercase transition-colors duration-300 hover:text-primary" href="">Inicio</a>
+        <a class="uppercase transition-colors duration-300 hover:text-primary" href="">Acerca</a>
+        <a class="uppercase transition-colors duration-300 hover:text-primary" href="">Menu</a>
+      </div>
     </div>
+  </div>
 
-    <!-- ? Main Content Layover -->
-    <div class="fixed top-0 left-0 z-10 hidden w-full h-full bg-black bg-opacity-50 cursor-pointer" id="main-layover">
-    </div>
+  <!-- ? Main Content Layover -->
+  <div class="fixed top-0 left-0 z-10 hidden w-full h-full bg-black bg-opacity-50 cursor-pointer " id="main-layover">
+  </div>
 
-    <!-- ? Desktop Navbar -->
-    <div class="fixed w-full container-fluid opacity-1 bg-black bg-opacity-40" id="navbar">
-        <div class="row xl:w-[90%] 2xl:w-[80%] lg:mx-auto">
-            <!-- Links Column -->
-            <div
-                class="hidden lg:flex lg:col-4 xl:border-l border-r text-white lg:flex-row lg:items-center lg:justify-center lg:space-x-4 font-bebas tracking-wider text-[22px] font-normal">
-                <a class="uppercase" href="">Inicio</a>
-                <a class="uppercase" href="">Acerca</a>
-                <a class="uppercase" href="">Menu</a>
-            </div>
+  <!-- ? Desktop Navbar -->
+  <div class="fixed w-full bg-black container-fluid opacity-1 bg-opacity-10" id="navbar">
+    <div class="row xl:w-[90%] 2xl:w-[80%] lg:mx-auto">
+      <!-- Links Column -->
+      <div class="
+            hidden
+            lg:flex
+            lg:col-4
+            xl:border-l
+            border-r
+            text-white
+            lg:flex-row
+            lg:items-center
+            lg:justify-center
+            lg:space-x-4
+            font-bebas
+            tracking-wider
+            text-[22px]
+            font-normal
+          ">
+        <a class="uppercase" href="">Inicio</a>
+        <a class="uppercase" href="">Acerca</a>
+        <a class="uppercase" href="">Menu</a>
+      </div>
 
-            <!-- Large Logo Column -->
-            <div class="relative hidden lg:flex lg:justify-center lg:col-4 border-r">
-                <a class="absolute z-10 lg:mt-2" href=""><img class="w-24 md:w-28 lg:w-40" src="media/logo-primary.png"
-                        alt=""></a>
-            </div>
+      <!-- Large Logo Column -->
+      <div class="relative hidden border-r lg:flex lg:justify-center lg:col-4">
+        <a class="absolute z-10 lg:mt-2" href=""><img class="w-24 md:w-28 lg:w-40" src="media/logo-primary.png"
+            alt="" /></a>
+      </div>
 
-            <!-- Social Column -->
-            <div class="col-6 lg:col-2 h-[80px] border-r flex items-center justify-end lg:justify-center">
-                <a class="absolute z-10 top-2 left-8 lg:hidden" href=""><img class="w-24 md:w-28 lg:w-32"
-                        src="media/logo-primary.png" alt=""></a>
+      <!-- Social Column -->
+      <div class="
+            col-6
+            lg:col-2
+            h-[80px]
+            border-r
+            flex
+            items-center
+            justify-end
+            lg:justify-center
+          ">
+        <a class="absolute z-10 top-2 left-8 lg:hidden" href=""><img class="w-24 md:w-28 lg:w-32"
+            src="media/logo-primary.png" alt="" /></a>
 
-                <div class="hidden md:block text-white space-x-4 mr-4">
-                    <a class="" href="https://www.facebook.com/latacitadeplataguatemala/" target="_blank"><i
-                            class="fab fa-facebook text-xl"></i></a>
-                    <a class="" href="https://www.instagram.com/latacitadeplatagt/?hl=en" target="_blank"><i
-                            class="fab fa-instagram text-xl"></i></a>
-                    <a class=""
-                        href="https://www.tripadvisor.com/Restaurant_Review-g292006-d13966542-Reviews-La_Tacita_De_Plata-Guatemala_City_Guatemala_Department.html"
-                        target="_blank"><i class="fab fa-tripadvisor text-xl"></i></a>
-                </div>
-            </div>
-            <!-- Tel. Number Column -->
-            <div class="col-6 lg:col-2 h-[80px] flex items-center justify-end lg:justify-center xl:border-r">
-                <a class="hidden md:block font-bebas text-white mr-16 lg:mr-0 text-[22px] font-normal tracking-wider"
-                    href="tel:+50223175874"><span>+502.2317.5874</span></a>
-
-                <div class="lg:hidden absolute flex flex-col space-y-1 top-5 right-2 py-2 px-3 cursor-pointer"
-                    id="open-btn">
-                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
-                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
-                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
-                </div>
-            </div>
-
+        <div class="hidden mr-4 space-x-4 text-white md:block">
+          <a class="" href="https://www.facebook.com/latacitadeplataguatemala/" target="_blank"><i
+              class="text-xl fab fa-facebook"></i></a>
+          <a class="" href="https://www.instagram.com/latacitadeplatagt/?hl=en" target="_blank"><i
+              class="text-xl fab fa-instagram"></i></a>
+          <a class=""
+            href="https://www.tripadvisor.com/Restaurant_Review-g292006-d13966542-Reviews-La_Tacita_De_Plata-Guatemala_City_Guatemala_Department.html"
+            target="_blank"><i class="text-xl fab fa-tripadvisor"></i></a>
         </div>
-        <div class="row">
-            <div class="w-full border-b"></div>
-            <div class="w-full border-b mt-1"></div>
-            <div class="w-full border-b mt-[1px]"></div>
+      </div>
+      <!-- Tel. Number Column -->
+      <div class="
+            col-6
+            lg:col-2
+            h-[80px]
+            flex
+            items-center
+            justify-end
+            lg:justify-center
+            xl:border-r
+          ">
+        <a class="
+              hidden
+              md:block
+              font-bebas
+              text-white
+              mr-16
+              lg:mr-0
+              text-[22px]
+              font-normal
+              tracking-wider
+            " href="tel:+50223175874"><span>+502.2317.5874</span></a>
+
+        <div class="absolute flex flex-col px-3 py-2 space-y-1 cursor-pointer lg:hidden top-5 right-2" id="open-btn">
+          <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+          <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+          <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
         </div>
-
+      </div>
     </div>
+    <div class="row">
+      <div class="w-full border-b"></div>
+      <div class="w-full mt-1 border-b"></div>
+      <div class="w-full border-b mt-[1px]"></div>
+    </div>
+  </div>
 
-    <!-- ? Section 1 -->
-    <div class="container-fluid bg-cover bg-no-repeat bg-center md:bg-bottom h-[410px] sm:h-[510px] md:h-[710px]"
-        style="background-image: url('media/banner-section-1.png');">
-        <div class="row h-full xl:w-[90%] 2xl:w-[80%] lg:mx-auto">
-            <div class="col-12 flex flex-col items-start justify-center text-white mt-8 md:mt-0 transition duration-300" id="text-section-one">
-                <span class="uppercase font-medium tracking-widest font-roboto text-[15px] md:mb-2">Lorem ipsum
-                    dolor</span>
-                <h1
-                    class="uppercase font-bebas text-[50px] leading-[50px] sm:w-[616px] md:text-[60px] lg:text-[80px] lg:leading-[70px]" >
-                    Lorem ipsum dolor sit amet consectetur</h1>
+  <!-- ? Section One -->
+  <div class="
+        container-fluid
+        bg-cover bg-no-repeat bg-center
+        md:bg-bottom
+        h-[410px]
+        sm:h-[510px]
+        md:h-[710px]
+      " style="background-image: url('media/banner-section-1.png')">
+    <div class="row h-full xl:w-[90%] 2xl:w-[80%] lg:mx-auto">
+      <div class="flex flex-col items-start justify-center mt-8 text-white transition duration-300 col-12 md:mt-0"
+        id="text-section-one">
+        <span class="
+              uppercase
+              font-medium
+              tracking-widest
+              font-roboto
+              text-[15px]
+              md:mb-2
+            ">Lorem ipsum dolor</span>
+        <h1 class="
+              uppercase
+              font-bebas
+              text-[50px]
+              leading-[50px]
+              sm:w-[616px]
+              md:text-[60px]
+              lg:text-[80px]
+              lg:leading-[70px]
+            ">
+          Lorem ipsum dolor sit amet consectetur
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ? Section 2 -->
+  <div class="py-24 container-fluid bg-secondary">
+    <div class="py-6 space-y-8 md:space-y-0 row">
+      <!-- Card One -->
+      <div class="col-12 md:col-4">
+        <div class="bg-center bg-no-repeat bg-cover card_section-two" style="background-image: url('media/pic-4.jpg')">
+          <div class="
+                h-[468px]
+                p-4
+                bg-opacity-20
+                transition-colors
+                duration-300
+                card-overlay
+              ">
+            <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
+              <div class="px-4 py-6" id="card_content-wrap">
+                <img class="mb-2" src="media/coffee-icon.png" alt="" />
+                <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
+                  Cafe
+                </h1>
+                <p
+                  class="overflow-hidden text-sm text-white transition-all duration-300 opacity-0 font-roboto hidden-text card_hide-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum praesentium voluptatem omnis sapiente aperiam?
+                  Est sapiente optio doloremque quis rerum. Ullam eligendi
+                  impedit sint voluptatibus.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="container-fluid bg-secondary">
-        <div class="row">
-            <div class="col-12 h-[650px] flex items-center justify-center">
-                <h1>Section 2</h1>
+      </div>
+
+      <!-- Card Two -->
+      <div class="col-12 md:col-4">
+        <div class="bg-center bg-no-repeat bg-cover card_section-two" style="background-image: url('media/pic-6.jpg')">
+          <div class="
+                h-[468px]
+                p-4
+                bg-opacity-20
+                transition-colors
+                duration-300
+                card-overlay
+              ">
+            <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
+              <div class="px-4 py-6" id="card_content-wrap">
+                <img class="mb-2" src="media/dessert-icon.png" alt="" />
+                <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
+                  Postres
+                </h1>
+                <p
+                  class="overflow-hidden text-sm text-white transition-all duration-300 opacity-0 font-roboto hidden-text card_hide-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum praesentium voluptatem omnis sapiente aperiam?
+                  Est sapiente optio doloremque quis rerum. Ullam eligendi
+                  impedit sint voluptatibus.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Card Three -->
+      <div class="col-12 md:col-4">
+        <div class="bg-center bg-no-repeat bg-cover card_section-two" style="background-image: url('media/pic-2.jpg')">
+          <div class="
+                h-[468px]
+                p-4
+                bg-opacity-20
+                transition-colors
+                duration-300
+                card-overlay
+              ">
+            <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
+              <div class="px-4 py-6" id="card_content-wrap">
+                <img class="mb-2" src="media/food-icon.png" alt="" />
+                <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
+                  Comida
+                </h1>
+                <p
+                  class="overflow-hidden text-sm text-white transition-all duration-300 opacity-0 font-roboto hidden-text card_hide-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum praesentium voluptatem omnis sapiente aperiam?
+                  Est sapiente optio doloremque quis rerum. Ullam eligendi
+                  impedit sint voluptatibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- ? Section Two - 2nd Row -->
+    <div class="relative pt-24 space-y-6 row">
+      <img class="absolute z-0 w-56 transform -translate-x-20 -translate-y-20" src="media/coffee-bg-1-invert.png"
+        alt="">
+      <div class="py-4 col-12">
+        <div class="relative">
+          <span class="
+              block    
+              uppercase
+              font-normal
+              tracking-widest
+              font-roboto
+              text-[15px]
+              mb-4
+            ">Recusandae Placeat</span>
+          <h1 class="
+              uppercase
+              font-bebas
+              text-[50px]
+              leading-[50px]
+              sm:w-[616px]
+              md:text-[60px]
+              lg:text-[80px]
+              lg:leading-[70px]
+              mb-4
+            ">
+            Cupiditate Obcaecati
+          </h1>
+          <p class="text-sm font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            neque culpa deserunt quos
+            maxime
+            optio
+            similique laborum incidunt, id quam.</p>
+        </div>
+      </div>
+      <div class="col-12 ">
+        <div class="h-[468px] bg-cover bg-center bg-no-repeat" style="background-image: url('media/galeria-3.jpg');">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="h-[468px] bg-cover bg-center bg-no-repeat" style="background-image: url('media/pic-1.jpg');">
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
-
-    <script src="public/script.js"></script>
+  <script src="public/script.js"></script>
 </body>
 
 </html>

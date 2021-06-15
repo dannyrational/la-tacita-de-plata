@@ -23,10 +23,15 @@ module.exports = {
         'primary': '#3DB8B3',
         'secondary': '#FFFBF2',
       },
+      transitionProperty: {
+        'max-height': 'max-height',
+      }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [
     require('tailwind-bootstrap-grid')({

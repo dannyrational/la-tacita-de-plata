@@ -22,7 +22,7 @@ mainLayover.addEventListener("click", function () {
 // * Hide Desktop Navigation Bar
 function hideNav() {
   window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 65 || document.documentElement.scrollTop > 65) {
+    if (window.pageYOffset > 50 || document.documentElement.scrollTop > 50) {
       navbar.classList.remove("show-nav");
       navbar.classList.add("hide-nav");
     } else {

@@ -28,7 +28,7 @@
         fixed
         top-0
         left-0
-        z-20
+        z-30
         bg-secondary
         w-[75%]
         xs:w-[65%]
@@ -56,11 +56,11 @@
   </div>
 
   <!-- ? Main Content Layover -->
-  <div class="fixed top-0 left-0 z-10 hidden w-full h-full bg-black bg-opacity-50 cursor-pointer " id="main-layover">
+  <div class="fixed top-0 left-0 z-20 hidden w-full h-full bg-black bg-opacity-50 cursor-pointer " id="main-layover">
   </div>
 
   <!-- ? Desktop Navbar -->
-  <div class="fixed w-full bg-black container-fluid opacity-1 bg-opacity-10" id="navbar">
+  <div class="fixed z-10 w-full bg-black container-fluid opacity-1 bg-opacity-10" id="navbar">
     <div class="row xl:w-[90%] 2xl:w-[80%] lg:mx-auto">
       <!-- Links Column -->
       <div class="
@@ -152,18 +152,20 @@
   </div>
 
   <!-- ? Section One -->
-  <div class="
-        container-fluid
-        bg-cover bg-no-repeat bg-center
-        md:bg-bottom
+  <div class="relative bg-center bg-no-repeat bg-cover md:bg-bottom"
+    style="background-image: url('media/coffeeshop-3.jpg')">
+    <img class="absolute bottom-0 md:hidden" src="media/section-1-bg-mobile.png" alt="">
+    <img class="absolute bottom-0 hidden md:block" src="media/section-1-bg-desktop.png" alt="">
+    <div class="
+        container
         h-[410px]
         sm:h-[510px]
         md:h-[710px]
-      " style="background-image: url('media/banner-section-1.png')">
-    <div class="row h-full xl:w-[90%] 2xl:w-[80%] lg:mx-auto">
-      <div class="flex flex-col items-start justify-center mt-8 text-white transition duration-300 col-12 md:mt-0"
-        id="text-section-one">
-        <span class="
+      ">
+      <div class="h-full row ">
+        <div class="flex flex-col items-start justify-center mt-8 text-white transition duration-300 col-12 md:mt-0"
+          id="text-section-one">
+          <span class="
               uppercase
               font-medium
               tracking-widest
@@ -171,29 +173,35 @@
               text-[15px]
               md:mb-2
             ">Lorem ipsum dolor</span>
-        <h1 class="
+          <h1 class="
               uppercase
               font-bebas
               text-[50px]
               leading-[50px]
-              sm:w-[616px]
+              max-w-[912px]
               md:text-[60px]
               lg:text-[80px]
               lg:leading-[70px]
             ">
-          Lorem ipsum dolor sit amet consectetur
-        </h1>
+            Lorem ipsum dolor sit amet consectetur
+          </h1>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- ? Section 2 -->
-  <div class="py-24 container-fluid bg-secondary">
-    <div class="py-6 space-y-8 md:space-y-0 row">
-      <!-- Card One -->
-      <div class="col-12 md:col-4">
-        <div class="bg-center bg-no-repeat bg-cover card_section-two" style="background-image: url('media/pic-4.jpg')">
-          <div class="
+  <div
+    class="relative py-24 overflow-hidden bg-left-bottom bg-no-repeat bg-cover md:bg-cover md:bg-center md:bottom bg-secondary">
+    <img class="absolute bottom-0 md:hidden" src="media/section-2-bg-mobile.png" alt="">
+    <img class="absolute bottom-0 hidden md:block" src="media/section-2-bg-desktop.png" alt="">
+    <div class="container">
+      <div class="py-6 space-y-8 md:space-y-0 row">
+        <!-- Card One -->
+        <div class="col-12 md:col-4">
+          <div class="bg-center bg-no-repeat bg-cover card_section-two"
+            style="background-image: url('media/pic-4.jpg')">
+            <div class="
                 h-[468px]
                 p-4
                 bg-opacity-20
@@ -201,29 +209,30 @@
                 duration-300
                 card-overlay
               ">
-            <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
-              <div class="px-4 py-6" id="card_content-wrap">
-                <img class="mb-2" src="media/coffee-icon.png" alt="" />
-                <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
-                  Cafe
-                </h1>
-                <p
-                  class="overflow-hidden text-sm text-white transition-all duration-300 opacity-0 font-roboto hidden-text card_hide-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum praesentium voluptatem omnis sapiente aperiam?
-                  Est sapiente optio doloremque quis rerum. Ullam eligendi
-                  impedit sint voluptatibus.
-                </p>
+              <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
+                <div class="px-4 py-6" id="card_content-wrap">
+                  <img class="mb-2" src="media/coffee-icon.png" alt="" />
+                  <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
+                    Cafe
+                  </h1>
+                  <p
+                    class="overflow-hidden text-sm text-white transition-all duration-700 opacity-0 font-roboto hidden-text card_hide-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum praesentium voluptatem omnis sapiente aperiam?
+                    Est sapiente optio doloremque quis rerum. Ullam eligendi
+                    impedit sint voluptatibus.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card Two -->
-      <div class="col-12 md:col-4">
-        <div class="bg-center bg-no-repeat bg-cover card_section-two" style="background-image: url('media/pic-6.jpg')">
-          <div class="
+        <!-- Card Two -->
+        <div class="col-12 md:col-4">
+          <div class="bg-center bg-no-repeat bg-cover card_section-two"
+            style="background-image: url('media/pic-6.jpg')">
+            <div class="
                 h-[468px]
                 p-4
                 bg-opacity-20
@@ -231,29 +240,30 @@
                 duration-300
                 card-overlay
               ">
-            <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
-              <div class="px-4 py-6" id="card_content-wrap">
-                <img class="mb-2" src="media/dessert-icon.png" alt="" />
-                <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
-                  Postres
-                </h1>
-                <p
-                  class="overflow-hidden text-sm text-white transition-all duration-300 opacity-0 font-roboto hidden-text card_hide-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum praesentium voluptatem omnis sapiente aperiam?
-                  Est sapiente optio doloremque quis rerum. Ullam eligendi
-                  impedit sint voluptatibus.
-                </p>
+              <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
+                <div class="px-4 py-6" id="card_content-wrap">
+                  <img class="mb-2" src="media/dessert-icon.png" alt="" />
+                  <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
+                    Postres
+                  </h1>
+                  <p
+                    class="overflow-hidden text-sm text-white transition-all duration-700 opacity-0 font-roboto hidden-text card_hide-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum praesentium voluptatem omnis sapiente aperiam?
+                    Est sapiente optio doloremque quis rerum. Ullam eligendi
+                    impedit sint voluptatibus.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card Three -->
-      <div class="col-12 md:col-4">
-        <div class="bg-center bg-no-repeat bg-cover card_section-two" style="background-image: url('media/pic-2.jpg')">
-          <div class="
+        <!-- Card Three -->
+        <div class="col-12 md:col-4">
+          <div class="bg-center bg-no-repeat bg-cover card_section-two"
+            style="background-image: url('media/pic-2.jpg')">
+            <div class="
                 h-[468px]
                 p-4
                 bg-opacity-20
@@ -261,32 +271,33 @@
                 duration-300
                 card-overlay
               ">
-            <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
-              <div class="px-4 py-6" id="card_content-wrap">
-                <img class="mb-2" src="media/food-icon.png" alt="" />
-                <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
-                  Comida
-                </h1>
-                <p
-                  class="overflow-hidden text-sm text-white transition-all duration-300 opacity-0 font-roboto hidden-text card_hide-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum praesentium voluptatem omnis sapiente aperiam?
-                  Est sapiente optio doloremque quis rerum. Ullam eligendi
-                  impedit sint voluptatibus.
-                </p>
+              <div class="flex flex-col justify-end h-full overflow-hidden border card_border-wrap">
+                <div class="px-4 py-6" id="card_content-wrap">
+                  <img class="mb-2" src="media/food-icon.png" alt="" />
+                  <h1 class="mb-2 text-4xl text-white uppercase font-bebas">
+                    Comida
+                  </h1>
+                  <p
+                    class="overflow-hidden text-sm text-white transition-all duration-700 opacity-0 font-roboto hidden-text card_hide-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum praesentium voluptatem omnis sapiente aperiam?
+                    Est sapiente optio doloremque quis rerum. Ullam eligendi
+                    impedit sint voluptatibus.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- ? Section Two - 2nd Row -->
-    <div class="relative pt-24 space-y-6 row">
-      <img class="absolute z-0 w-56 transform -translate-x-20 -translate-y-20" src="media/coffee-bg-1-invert.png"
-        alt="">
-      <div class="py-4 col-12">
-        <div class="relative">
-          <span class="
+      <!-- ? Section Two - 2nd Row -->
+      <div class="relative py-24 space-y-6 md:space-y-0 row">
+        <img class="absolute z-0 w-56 transform -translate-x-16 -translate-y-20" src="media/coffee-bg-1-invert.png"
+          alt="">
+        <img class="absolute right-0 z-0 w-56 transform translate-x-20 bottom-4" src="media/coffee-bg-4.png" alt="">
+        <div class="py-4 col-12 md:col-4">
+          <div class="relative">
+            <span class="
               block    
               uppercase
               font-normal
@@ -295,37 +306,50 @@
               text-[15px]
               mb-4
             ">Recusandae Placeat</span>
-          <h1 class="
+            <h1 class="
               uppercase
               font-bebas
               text-[50px]
               leading-[50px]
-              sm:w-[616px]
               md:text-[60px]
               lg:text-[80px]
               lg:leading-[70px]
               mb-4
+              
             ">
-            Cupiditate Obcaecati
-          </h1>
-          <p class="text-sm font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            neque culpa deserunt quos
-            maxime
-            optio
-            similique laborum incidunt, id quam.</p>
+              Cupiditate Obcaecati
+            </h1>
+            <p class="text-sm lg:text-[16px] leading-relaxed font-roboto">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+              Eligendi
+              neque culpa deserunt quos
+              maxime
+              optio
+              similique laborum incidunt, id quam.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-12 ">
-        <div class="h-[468px] bg-cover bg-center bg-no-repeat" style="background-image: url('media/galeria-3.jpg');">
+        <div class="col-12 md:col-4">
+          <div class="h-[468px] md:h-[295px] lg:h-[367px] xl:h-[452px] bg-cover bg-center bg-no-repeat"
+            style="background-image: url('media/galeria-3.jpg');">
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="h-[468px] bg-cover bg-center bg-no-repeat" style="background-image: url('media/pic-1.jpg');">
+        <div class="col-12 md:col-4">
+          <div class="h-[468px] md:h-[295px] lg:h-[367px] xl:h-[452px] bg-cover bg-center bg-no-repeat"
+            style="background-image: url('media/pic-1.jpg');">
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Section Three -->
+  <div class="h-[700px] bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+      </div>
+    </div>
+  </div>
   <script src="public/script.js"></script>
 </body>
 

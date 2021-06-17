@@ -28,3 +28,22 @@
 .card_show-text {
     max-height: 140px;
 }
+
+.animated-object {
+    animation: tilt 5000ms infinite;
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+
+}

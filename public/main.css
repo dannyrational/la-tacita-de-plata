@@ -748,6 +748,9 @@ video {
 .left-16 {
 	left: 4rem;
 }
+.z-30 {
+	z-index: 30;
+}
 .z-20 {
 	z-index: 20;
 }
@@ -756,9 +759,6 @@ video {
 }
 .z-0 {
 	z-index: 0;
-}
-.z-30 {
-	z-index: 30;
 }
 .order-last {
 	order: 9999;
@@ -891,12 +891,6 @@ video {
 .h-16 {
 	height: 4rem;
 }
-.h-\[168px\] {
-	height: 168px;
-}
-.h-auto {
-	height: auto;
-}
 .max-h-\[3\.23rem\] {
 	max-height: 3.23rem;
 }
@@ -950,12 +944,6 @@ video {
 }
 .w-12 {
 	width: 3rem;
-}
-.w-auto {
-	width: auto;
-}
-.w-\[168px\] {
-	width: 168px;
 }
 .min-w-\[3\.23rem\] {
 	min-width: 3.23rem;
@@ -1374,9 +1362,6 @@ video {
 .bg-opacity-50 {
 	--tw-bg-opacity: 0.5;
 }
-.bg-opacity-10 {
-	--tw-bg-opacity: 0.1;
-}
 .bg-opacity-20 {
 	--tw-bg-opacity: 0.2;
 }
@@ -1430,10 +1415,6 @@ video {
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
-.object-fill {
-	-o-object-fit: fill;
-	   object-fit: fill;
-}
 .object-bottom {
 	-o-object-position: bottom;
 	   object-position: bottom;
@@ -1460,13 +1441,17 @@ video {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
-.py-24 {
-	padding-top: 6rem;
-	padding-bottom: 6rem;
+.py-16 {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 .py-6 {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
+}
+.py-24 {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
 }
 .pt-1 {
 	padding-top: 0.25rem;

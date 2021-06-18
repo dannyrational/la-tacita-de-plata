@@ -59,7 +59,6 @@ textOpacity();
 function cardEnter() {
   for (let i = 0; i < cardBorderWrap.length; i++) {
     cardBorderWrap[i].addEventListener("mouseenter", function () {
-      console.log("Hello");
       cardHiddenText[i].classList.remove('card_hide-text', 'opacity-0')
       cardHiddenText[i].classList.add('card_show-text', 'opacity-1')
     });
@@ -67,12 +66,12 @@ function cardEnter() {
 
 
 }
+
 cardEnter();
 
 function cardExit() {
   for (let i = 0; i < cardBorderWrap.length; i++) {
     cardBorderWrap[i].addEventListener("mouseleave", function () {
-      console.log("Bye");
       cardHiddenText[i].classList.remove('card_show-text', 'opacity-1')
       cardHiddenText[i].classList.add('card_hide-text', 'opacity-0')
     });
@@ -80,14 +79,25 @@ function cardExit() {
 
 
 }
+
 cardExit();
 
-function cardClick() {
+// * Card Mobile Animation
+function cardClickIn() {
   for (let i = 0; i < cardBorderWrap.length; i++) {
     cardBorderWrap[i].addEventListener('click', function () {
-      cardHiddenText[i].classList.toggle('card_show-text')
-      cardHiddenText[i].classList.toggle('opacity-0')
+
+      if (!cardHiddenText[i].classList.contains('card_show-text', 'opacity-1')) {
+        cardHiddenText[i].classList.add('card_show-text', 'opacity-1')
+        cardHiddenText[i].classList.remove('card_hide-text', 'opacity-0')
+      } else {
+        cardHiddenText[i].classList.remove('card_show-text', 'opacity-1')
+        cardHiddenText[i].classList.add('card_hide-text', 'opacity-0')
+      }
+
+
     })
   }
 }
-cardClick()
+
+cardClickIn()

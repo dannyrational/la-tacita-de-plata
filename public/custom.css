@@ -47,4 +47,5 @@
 /* ? Desktop Navbar Blur */
 .bdrop-blur {
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }

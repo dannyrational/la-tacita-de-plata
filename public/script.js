@@ -80,5 +80,14 @@ function cardExit() {
 
 
 }
-
 cardExit();
+
+function cardClick() {
+  for (let i = 0; i < cardBorderWrap.length; i++) {
+    cardBorderWrap[i].addEventListener('click', function () {
+      cardHiddenText[i].classList.toggle('card_show-text')
+      cardHiddenText[i].classList.toggle('opacity-0')
+    })
+  }
+}
+cardClick()

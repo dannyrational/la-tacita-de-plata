@@ -59,37 +59,59 @@ function textOpacity() {
 textOpacity();
 
 // * Card Hover Animation
-function cardEnter() {
+// function cardEnter() {
+//   for (let i = 0; i < cardBorderWrap.length; i++) {
+//     cardBorderWrap[i].addEventListener("mouseenter", function () {
+//       cardHiddenText[i].classList.remove('card_hide-text')
+//       cardHiddenText[i].classList.add('card_show-text')
+//     });
+//   }
+
+
+// }
+
+// cardEnter();
+
+// function cardExit() {
+//   for (let i = 0; i < cardBorderWrap.length; i++) {
+//     cardBorderWrap[i].addEventListener("mouseleave", function () {
+//       cardHiddenText[i].classList.remove('card_show-text')
+//       cardHiddenText[i].classList.add('card_hide-text')
+//     });
+//   }
+// }
+
+// cardExit();
+
+// * Card Mobile Animation
+// function cardClickIn(card) {
+//   if (card.classList.contains('card_hide-text')) {
+//     card.classList.remove('card_hide-text')
+//     card.classList.add('card_show-text')
+//   } else {
+//     card.classList.remove('card_show-text')
+//     card.classList.add('card_hide-text')
+//   }
+// }
+
+function onTouchCardIn() {
   for (let i = 0; i < cardBorderWrap.length; i++) {
-    cardBorderWrap[i].addEventListener("mouseenter", function () {
+    cardBorderWrap[i].addEventListener("touchstart", function () {
       cardHiddenText[i].classList.remove('card_hide-text')
       cardHiddenText[i].classList.add('card_show-text')
     });
   }
-
-
 }
 
-cardEnter();
+onTouchCardIn()
 
-function cardExit() {
+function onTouchCardOut() {
   for (let i = 0; i < cardBorderWrap.length; i++) {
-    cardBorderWrap[i].addEventListener("mouseleave", function () {
+    cardBorderWrap[i].addEventListener("touchend", function () {
       cardHiddenText[i].classList.remove('card_show-text')
       cardHiddenText[i].classList.add('card_hide-text')
     });
   }
 }
 
-cardExit();
-
-// * Card Mobile Animation
-function cardClickIn(card) {
-  if (card.classList.contains('card_hide-text')) {
-    card.classList.remove('card_hide-text')
-    card.classList.add('card_show-text')
-  } else {
-    card.classList.remove('card_show-text')
-    card.classList.add('card_hide-text')
-  }
-}
+onTouchCardOut()

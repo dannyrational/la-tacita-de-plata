@@ -5,6 +5,7 @@ const navbar = document.getElementById("navbar");
 const textSectionOne = document.getElementById("text-section-one");
 const cardBorderWrap = document.querySelectorAll('.card_border-wrap');
 const cardHiddenText = document.querySelectorAll('.hidden-text');
+const cardHiddenPara = document.querySelector('.hidden-text')
 
 
 
@@ -84,20 +85,11 @@ cardExit();
 
 // * Card Mobile Animation
 function cardClickIn() {
-  for (let i = 0; i < cardBorderWrap.length; i++) {
-    cardBorderWrap.addEventListener('click', function () {
-
-      if (cardHiddenText[i].classList.contains('card_hide-text')) {
-        cardHiddenText[i].classList.remove('card_hide-text')
-        cardHiddenText[i].classList.add('card_show-text')
-      } else {
-        cardHiddenText[i].classList.remove('card_show-text')
-        cardHiddenText[i].classList.add('card_hide-text')
-      }
-
-
-    })
+  if (cardHiddenPara.classList.contains('card_hide-text')) {
+    cardHiddenPara.classList.remove('card_hide-text')
+    cardHiddenPara.classList.add('card_show-text')
+  } else {
+    cardHiddenPara.classList.remove('card_show-text')
+    cardHiddenPara.classList.add('card_hide-text')
   }
 }
-
-cardClickIn()

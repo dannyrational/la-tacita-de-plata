@@ -736,6 +736,9 @@ video {
 .bottom-4 {
 	bottom: 1rem;
 }
+.-top-1 {
+	top: -0.25rem;
+}
 .top-6 {
 	top: 1.5rem;
 }
@@ -747,9 +750,6 @@ video {
 }
 .left-16 {
 	left: 4rem;
-}
-.-top-1 {
-	top: -0.25rem;
 }
 .z-30 {
 	z-index: 30;
@@ -1623,9 +1623,6 @@ video {
 }
 .placeholder-opacity-60::placeholder {
 	--tw-placeholder-opacity: 0.6;
-}
-.opacity-0 {
-	opacity: 0;
 }
 .opacity-90 {
 	opacity: 0.9;

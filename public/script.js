@@ -85,7 +85,7 @@ cardExit();
 // * Card Mobile Animation
 function cardClickIn() {
   for (let i = 0; i < cardBorderWrap.length; i++) {
-    cardBorderWrap[i].addEventListener('click', function () {
+    cardBorderWrap.addEventListener('click', function () {
 
       if (cardHiddenText[i].classList.contains('card_hide-text')) {
         cardHiddenText[i].classList.remove('card_hide-text')

@@ -23,11 +23,9 @@ mainLayover.addEventListener("click", function () {
 function hideNav() {
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 50 || document.documentElement.scrollTop > 50) {
-      navbar.classList.remove("show-nav");
       navbar.classList.add("hide-nav");
     } else {
       navbar.classList.remove("hide-nav");
-      navbar.classList.add("show-nav");
     }
   });
 }

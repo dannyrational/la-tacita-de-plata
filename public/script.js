@@ -5,7 +5,9 @@ const navbar = document.getElementById("navbar");
 const textSectionOne = document.getElementById("text-section-one");
 const cardBorderWrap = document.querySelectorAll('.card_border-wrap');
 const cardHiddenText = document.querySelectorAll('.hidden-text');
-const cardHiddenPara = document.querySelector('.hidden-text')
+const cardOne = document.getElementById('card_text-one')
+const cardTwo = document.getElementById('card_text-two')
+const cardThree = document.getElementById('card_text-three')
 
 
 
@@ -57,43 +59,37 @@ function textOpacity() {
 textOpacity();
 
 // * Card Hover Animation
-// function cardEnter() {
-//   for (let i = 0; i < cardBorderWrap.length; i++) {
-//     cardBorderWrap[i].addEventListener("mouseenter", function () {
-//       cardHiddenText[i].classList.remove('card_hide-text')
-//       cardHiddenText[i].classList.add('card_show-text')
-//     });
-//   }
-
-
-// }
-
-// cardEnter();
-
-// function cardExit() {
-//   for (let i = 0; i < cardBorderWrap.length; i++) {
-//     cardBorderWrap[i].addEventListener("mouseleave", function () {
-//       cardHiddenText[i].classList.remove('card_show-text')
-//       cardHiddenText[i].classList.add('card_hide-text')
-//     });
-//   }
-
-
-// }
-
-// cardExit();
-
-// * Card Mobile Animation
-function cardClickIn() {
+function cardEnter() {
   for (let i = 0; i < cardBorderWrap.length; i++) {
-    if (cardHiddenText[i].classList.contains('card_hide-text')) {
+    cardBorderWrap[i].addEventListener("mouseenter", function () {
       cardHiddenText[i].classList.remove('card_hide-text')
       cardHiddenText[i].classList.add('card_show-text')
-    } else {
-      cardHiddenText[i].classList.remove('card_show-text')
-      cardHiddenText[i].classList.add('card_hide-text')
-    }
+    });
   }
 
 
+}
+
+cardEnter();
+
+function cardExit() {
+  for (let i = 0; i < cardBorderWrap.length; i++) {
+    cardBorderWrap[i].addEventListener("mouseleave", function () {
+      cardHiddenText[i].classList.remove('card_show-text')
+      cardHiddenText[i].classList.add('card_hide-text')
+    });
+  }
+}
+
+cardExit();
+
+// * Card Mobile Animation
+function cardClickIn(card) {
+  if (card.classList.contains('card_hide-text')) {
+    card.classList.remove('card_hide-text')
+    card.classList.add('card_show-text')
+  } else {
+    card.classList.remove('card_show-text')
+    card.classList.add('card_hide-text')
+  }
 }

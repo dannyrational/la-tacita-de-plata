@@ -56,31 +56,31 @@ function textOpacity() {
 textOpacity();
 
 // * Card Hover Animation
-// function cardEnter() {
-//   for (let i = 0; i < cardBorderWrap.length; i++) {
-//     cardBorderWrap[i].addEventListener("mouseenter", function () {
-//       cardHiddenText[i].classList.remove('card_hide-text', 'opacity-0')
-//       cardHiddenText[i].classList.add('card_show-text', 'opacity-1')
-//     });
-//   }
+function cardEnter() {
+  for (let i = 0; i < cardBorderWrap.length; i++) {
+    cardBorderWrap[i].addEventListener("mouseenter", function () {
+      cardHiddenText[i].classList.remove('card_hide-text')
+      cardHiddenText[i].classList.add('card_show-text')
+    });
+  }
 
 
-// }
+}
 
-// cardEnter();
+cardEnter();
 
-// function cardExit() {
-//   for (let i = 0; i < cardBorderWrap.length; i++) {
-//     cardBorderWrap[i].addEventListener("mouseleave", function () {
-//       cardHiddenText[i].classList.remove('card_show-text', 'opacity-1')
-//       cardHiddenText[i].classList.add('card_hide-text', 'opacity-0')
-//     });
-//   }
+function cardExit() {
+  for (let i = 0; i < cardBorderWrap.length; i++) {
+    cardBorderWrap[i].addEventListener("mouseleave", function () {
+      cardHiddenText[i].classList.remove('card_show-text')
+      cardHiddenText[i].classList.add('card_hide-text')
+    });
+  }
 
 
-// }
+}
 
-// cardExit();
+cardExit();
 
 // * Card Mobile Animation
 function cardClickIn() {
@@ -88,11 +88,11 @@ function cardClickIn() {
     cardBorderWrap[i].addEventListener('click', function () {
 
       if (cardHiddenText[i].classList.contains('card_hide-text')) {
-        cardHiddenText[i].classList.remove('card_hide-text', 'opacity-0')
-        cardHiddenText[i].classList.add('card_show-text', 'opacity-1')
+        cardHiddenText[i].classList.remove('card_hide-text')
+        cardHiddenText[i].classList.add('card_show-text')
       } else {
-        cardHiddenText[i].classList.remove('card_show-text', 'opacity-1')
-        cardHiddenText[i].classList.add('card_hide-text', 'opacity-0')
+        cardHiddenText[i].classList.remove('card_show-text')
+        cardHiddenText[i].classList.add('card_hide-text')
       }
 
 

@@ -59,29 +59,24 @@ function textOpacity() {
 textOpacity();
 
 // * Card Hover Animation
-// function cardEnter() {
-//   for (let i = 0; i < cardBorderWrap.length; i++) {
-//     cardBorderWrap[i].addEventListener("mouseenter", function () {
-//       cardHiddenText[i].classList.remove('card_hide-text')
-//       cardHiddenText[i].classList.add('card_show-text')
-//     });
-//   }
+for (let i = 0; i < cardBorderWrap.length; i++) {
+  cardBorderWrap[i].addEventListener("mouseenter", function () {
+    if (window.innerWidth > 1023) {
+      cardHiddenText[i].classList.remove('card_hide-text')
+      cardHiddenText[i].classList.add('card_show-text')
+    }
+  });
+}
 
 
-// }
-
-// cardEnter();
-
-// function cardExit() {
-//   for (let i = 0; i < cardBorderWrap.length; i++) {
-//     cardBorderWrap[i].addEventListener("mouseleave", function () {
-//       cardHiddenText[i].classList.remove('card_show-text')
-//       cardHiddenText[i].classList.add('card_hide-text')
-//     });
-//   }
-// }
-
-// cardExit();
+for (let i = 0; i < cardBorderWrap.length; i++) {
+  cardBorderWrap[i].addEventListener("mouseleave", function () {
+    if (window.innerWidth > 1023) {
+      cardHiddenText[i].classList.remove('card_show-text')
+      cardHiddenText[i].classList.add('card_hide-text')
+    }
+  });
+}
 
 // * Card Mobile Animation
 // function cardClickIn(card) {
@@ -94,17 +89,15 @@ textOpacity();
 //   }
 // }
 
-
 for (let i = 0; i < cardBorderWrap.length; i++) {
   cardBorderWrap[i].addEventListener("click", function () {
-    if (cardHiddenText[i].classList.contains('card_hide-text')) {
+    if (window.innerWidth < 1024 && cardHiddenText[i].classList.contains('card_hide-text')) {
+      console.log("I'm the mobile function.");
       cardHiddenText[i].classList.remove('card_hide-text')
       cardHiddenText[i].classList.add('card_show-text')
     } else {
       cardHiddenText[i].classList.remove('card_show-text')
       cardHiddenText[i].classList.add('card_hide-text')
     }
-
-
   });
 }
